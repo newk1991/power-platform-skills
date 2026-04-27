@@ -214,3 +214,9 @@ another at runtime.
 against the parent's available space.
 
 ---
+
+## Check 9 — CONTROL-VERSION-SUFFIX (`Control:` value contains `@version`)
+
+**Detect:** For every `Control:` property, flag any value that contains an `@` character (e.g. `Control: Text@2.0.0`).
+
+**Fix:** Strip the `@…` suffix, keeping only the bare control name (`Control: Text`).
