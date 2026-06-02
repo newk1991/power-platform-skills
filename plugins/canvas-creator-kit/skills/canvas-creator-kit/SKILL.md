@@ -1,16 +1,18 @@
 ---
 name: canvas-creator-kit
 description: >-
-  Load this skill ALONGSIDE canvas-apps whenever the user works with Power Apps Creator Kit
-  controls/components in a Canvas App or custom page. Triggers on any mention of Creator Kit,
-  PowerCAT, or these Fluent UI controls in a Power Apps context: CommandBar, DetailsList
-  (FluentDetailsList), Nav, Pivot, Breadcrumb, SubwayNav, ExpandMenu, Panel, Dialog, SearchBox,
-  PeoplePicker, TagPicker/Picker, TagList, Calendar, ResizableTextarea, SpinButton, Facepile,
-  Persona, Card, Elevation, Spinner, Shimmer, ProgressIndicator, AutoWidthLabel, Icon,
-  DonutChart, GaugeChart, HorizontalBarChart, StackedBarChart, ThemeJSON / Fluent theming.
-  Also trigger for: "add a [Creator Kit control] to my app", "Items property for CommandBar",
-  "Columns property for DetailsList", "Creator Kit control not showing / blank rectangle",
-  "ThemeJSON structure", "PCF control in a canvas app", or Fluent UI components in Power Platform.
+  Load ALONGSIDE canvas-apps for any Power Apps Creator Kit / PowerCAT control work
+  (cat_PowerCAT.* PCF + canvas components) in a Canvas App or custom page. It is their schema
+  authority - describe_control and compile_canvas 404 / report 'unknown code component' for
+  them, so don't guess. Trigger on Creator Kit, PowerCAT, or any of: CommandBar,
+  FluentDetailsList, Nav, Pivot, Breadcrumb, SubwayNav, ExpandMenu, Panel, Dialog, SearchBox,
+  PeoplePicker, TagPicker, TagList, Calendar, ResizableTextarea, SpinButton, Facepile, Persona,
+  Card, Elevation, Spinner, Shimmer, ProgressIndicator, AutoWidthLabel, Icon, DonutChart,
+  GaugeChart, HorizontalBarChart, StackedBarChart, ThemeJSON. Typical asks: the Items /
+  columns_Items / RecordKey formula, button/icon tables, column sort, selected row,
+  filter-as-you-type, opening a Panel/Dialog from a record, the component name, or controls
+  showing as blank rectangles or won't insert. Skip plain canvas apps using only standard or
+  first-party modern controls.
 metadata:
   requires: canvas-apps
   version: 1.0.0
