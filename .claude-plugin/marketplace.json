@@ -62,6 +62,21 @@
             ]
         },
         {
+            "name": "canvas-creator-kit",
+            "source": "./plugins/canvas-creator-kit",
+            "description": "Creator Kit (Fluent UI) control extension for canvas-apps — exact schemas, Power Fx, and theming for Power Apps Creator Kit controls. Load alongside canvas-apps.",
+            "category": "development",
+            "tags": [
+                "power platform",
+                "power apps",
+                "canvas apps",
+                "creator kit",
+                "fluent ui",
+                "pcf",
+                "microsoft"
+            ]
+        },
+        {
             "name": "code-apps-preview",
             "source": "./plugins/code-apps",
             "description": "Build and deploy Power Apps code apps using React, Vite, and Power Platform connectors",
